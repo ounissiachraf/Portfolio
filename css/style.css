@@ -65,8 +65,10 @@ footer a, footer ul li{
     color: #F3F6F4;
     list-style: none;
     text-decoration: none;
-    
-
+}
+footer li a:hover{
+    color: #8c6a02;
+    cursor: pointer;
 }
 footer>div{
         width: 90%;
