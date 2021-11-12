@@ -66,7 +66,7 @@ footer a, footer ul li{
     list-style: none;
     text-decoration: none;
 }
-footer li a:hover{
+footer li a:hover,.leftfoot a:hover{
     color: #8c6a02;
     cursor: pointer;
 }
@@ -226,14 +226,18 @@ footer>p{
 }
 .contact{
         text-align: center;
-        padding: 120px 0;
+        padding: 80px 0;
         background-color: #F3F6F4;
 }
 
 /*fin home*/
 
 /*debut portfolio*/
-
+.workLinks{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;    
+}
 .workBox {
     display: flex;
     justify-content: space-around;
@@ -251,7 +255,7 @@ footer>p{
   }
  
   .workBox .flexslider {
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
     height: auto;
   }
@@ -262,8 +266,8 @@ footer>p{
     border: 1px solid #ddd;
   }
   .workDescribeContainer img{
-      width: 10rem;
-      height: 7rem;
+      width: 7rem;
+      height: 5rem;
   }
   .sectionHead h2{
     font-family: "Lora", serif;
@@ -276,6 +280,10 @@ footer>p{
     padding-left: 5rem;
     margin: 3rem 0;
 }
+.workDescribeContainer{
+    padding-top: 2rem;
+    width: 40%;
+}
 .workDescribeContainer h3,.workDescribeContainer h4{
     font-family: "Lora", serif;
     letter-spacing: 0.25rem;
@@ -286,7 +294,6 @@ footer>p{
     font-family: "Lora", serif;
     letter-spacing: 0.25rem;
     font-weight: lighter;
-    margin-bottom: 2rem;
     text-decoration: none;
     color: #2C2C2C;
     font-size: 1.5rem;
@@ -297,6 +304,10 @@ footer>p{
 }
 .workLinks{
     margin-top: 6rem;
+}
+
+.hide{
+    display: none;
 }
 /*fin portfolio*/
 
@@ -428,3 +439,35 @@ form button:hover{
     background-color: #8c6a02;
     cursor: pointer;
 }
+.navi {
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.navi li {
+    margin-right: 20px;
+    list-style: none;
+  }
+  
+.navi li button {
+    border: none;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0.15rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+  
+.navi li button:hover, .navi button:focus {
+    background-color: #c3a764;
+    cursor: pointer;
+  }
+  
+.navi li button.active {
+    background-color: #c3a764;
+  }
+  
